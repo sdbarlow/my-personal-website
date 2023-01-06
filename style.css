@@ -1,8 +1,33 @@
 body {
-    background: black;
+    background: linear-gradient(-45deg, #5b3770, #000000, #645e69, #600475);
+    background-size: 1000%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
+}
+
+nav {
+    background: gray;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
 }
